@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Buzzs Development</title>
+    <meta name="description" content="Test">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navbar">
+        <img class="logo" src="images/bg.jpg">
+        <div class="hamburger-icon">&#9776;</div>
+        <div class="dropdown-menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="whole-container">
+        <div class="landing-container">
+            <h1>Buzz | Developer</h1>
+        </div>
+        <div class="container-one">
+            <a href="/minecraft.html" class="clickable-div">
+                <h2>Minecraft</h2>
+                <h3>Server Setups, Datapacks, BetonQuest Packages, DeluxeMenus, Sys Admin, Network Management</h3>
+            </a>
+        </div>
+        <div class="container-two">
+            <a href="/webdev.html" class="clickable-div">
+                <h2>Web Development</h2>
+                <h3>HTML, CSS</h3>
+            </a>
+        </div>
+        <div class="footer">
+            &copy; 2023 BuzzLiteyear | 
+            <a href="https://github.com/Buzz-Liteyear0" target="_blank">
+                <img class="github-logo" src="https://github.com/fluidicon.png" alt="GitHub Logo">
+            </a>
+            <a href="https://discordapp.com/users/885110014094737428" target="_blank">
+                <img class="discord-logo" src="https://cdn.konigle.com/discord-logo.svg" alt="Discord Logo">
+            </a>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.hamburger-icon').addEventListener('click', function() {
+            document.querySelector('.dropdown-menu').style.display = (document.querySelector('.dropdown-menu').style.display === 'none') ? 'flex' : 'none';
+        });
+        document.addEventListener('click', function(event) {
+            if (!event.target.matches('.hamburger-icon') && !event.target.matches('.dropdown-menu')) {
+                document.querySelector('.dropdown-menu').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

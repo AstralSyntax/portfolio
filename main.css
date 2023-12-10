@@ -1,0 +1,149 @@
+html,body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    color: #fffefe;
+    padding: 10px;
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.logo {
+    height: auto;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+    text-align: center;
+}
+
+.whole-container {
+    position: fixed;
+    top: 45px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+.whole-container::-webkit-scrollbar {
+    width: 100%;
+  }
+
+.landing-container,
+.container-one,
+.container-two {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1a1a1a;
+    color: #ffe7e7;
+    line-height: 100px;
+}
+
+.landing-container {
+    height: 100vh;
+    background-image: url('images/bg.jpg');
+}
+
+.container-one {
+    height: 50vh;
+    background-image: url('images/minecraft.png');
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+
+.container-two {
+    height: 50vh;
+    background-image: url('images/website.jpg');
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.clickable-div {
+    height: 50vh;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    padding-top: 100px;
+}
+
+.footer {
+    background-color: rgb(43, 42, 42);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+}
+
+.github-logo {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.discord-logo {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
